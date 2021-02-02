@@ -105,6 +105,8 @@ ul {
   line-height: 1.142;
   letter-spacing: 0.02em;
   color: var(--titles-color);
+  transition-property: color;
+  transition-duration: 250ms;
 }
 .nav-list-link:hover,
 .nav-list-link:focus {
@@ -140,6 +142,8 @@ ul {
   line-height: 1.142;
   letter-spacing: 0.02em;
   color: #757575;
+  transition-property: color;
+  transition-duration: 250ms;
 }
 .contact-list-link:hover,
 .contact-list-link:focus {
@@ -333,8 +337,20 @@ ul {
   margin-right: 0;
   justify-content: space-between;
 }
+.galery-list-img {
+  z-index: 0;
+}
 .servises-list-itme {
   margin: 15px;
+  position: relative;
+}
+.servises-oppression {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 70px;
+  left: 0;
+  bottom: 0;
 }
 /*========END SERVISES============*/
 
@@ -366,6 +382,8 @@ ul {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  transition-property: border;
+  transition-duration: 250ms;
 }
 .team-list-itme:not(:last-child) {
   margin-right: 30px;
@@ -398,21 +416,28 @@ ul {
   align-items: center;
   width: 170px;
   height: 90px;
-  border: 1px solid#AFB1B8;
+  outline: 1px solid#AFB1B8;
   border-radius: 4px;
+  transition-property: outline;
+  transition-duration: 250ms;
 }
 .customer-list-itme:not(:last-child) {
   margin-right: 30px;
 }
 .costom-list-link:hover,
 .costom-list-link:focus {
-  border-color: var(--accent-color);
+  outline: 1px solid var(--accent-color);
 }
 .custom-icon-yaco {
   width: 44px;
   height: 50px;
-  fill: #afb1b8;
 }
+.list-hover {
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+}
+
 .costom-list-link:hover .list-hover,
 .costom-list-link:focus .list-hover {
   fill: var(--accent-color);
@@ -420,27 +445,22 @@ ul {
 .custom-icon-company {
   width: 40px;
   height: 52px;
-  fill: #afb1b8;
 }
 .custom-icon-company-1 {
   width: 41px;
   height: 43px;
-  fill: #afb1b8;
 }
 .custom-icon-foster-petrs {
   width: 80px;
   height: 42px;
-  fill: #afb1b8;
 }
 .custom-icon-brand {
   width: 59px;
   height: 47px;
-  fill: #afb1b8;
 }
 .custom-icon-company2 {
   width: 88px;
   height: 44px;
-  fill: #afb1b8;
 }
 /*=========CUSTOMER END============*/
 /*=========fOOTER============*/
@@ -474,6 +494,8 @@ ul {
   height: 21px;
   padding-top: 10px;
   margin-bottom: 9px;
+  transition-property: color;
+  transition-duration: 250ms;
 }
 .address-link:hover,
 .address-link:focus {
@@ -496,16 +518,18 @@ ul {
   padding-top: 10px;
   margin-bottom: 9px;
 }
-.footer .contact-list-link:hover,
-.contact-list-link:focus {
-  color: var(--accent-color);
-}
 .footer .contact-list-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.02em;
   color: #757575;
+  transition-property: color;
+  transition-duration: 250ms;
+}
+.footer .contact-list-link:hover,
+.contact-list-link:focus {
+  color: var(--accent-color);
 }
 
 /*========PORTFOLIO============*/
@@ -547,6 +571,9 @@ ul {
   height: 38px;
   padding: 6px 22px;
   margin-right: 8px;
+
+  transition-property: background-color color box-shadow;
+  transition-duration: 250ms;
 }
 .filter-modal-btn:hover,
 .filter-modal-btn:focus {
@@ -572,6 +599,8 @@ ul {
 .galegry-list-link {
   display: block;
   outline: 1px solid #eeeeee;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
 }
 .galegry-list-link:hover,
 .galegry-list-link:focus {
@@ -647,6 +676,8 @@ ul {
   height: 44px;
   border-radius: 50%;
   background-color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 250ms;
 }
 .social-media-link:focus,
 .social-media-link:hover {
@@ -654,6 +685,8 @@ ul {
 }
 .footer-container .social-media-link {
   background-color: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  transition-duration: 250ms;
 }
 .footer-container .social-media-link:hover,
 .footer-container .social-media-link:focus {
