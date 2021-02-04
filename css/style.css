@@ -337,20 +337,49 @@ ul {
   margin-right: 0;
   justify-content: space-between;
 }
-.galery-list-img {
-  z-index: 0;
-}
 .servises-list-itme {
   margin: 15px;
+}
+.servises-img-box {
   position: relative;
 }
-.servises-oppression {
+/*.servises-list-img::before {
+  display: inline-block;
+  content: "hlkhklfhkfhk";
   position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+
+  left: 0;
+  z-index: 1;
+  background-color: rgb(124, 9, 9);
+}*/
+.servises-list > p {
+}
+.servises-oppression {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: rgba(47, 48, 58, 0.8);
+  color: #ffffff;
   z-index: 1;
   width: 100%;
   height: 70px;
   left: 0;
   bottom: 0;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
 /*========END SERVISES============*/
 
